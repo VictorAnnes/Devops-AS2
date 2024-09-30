@@ -17,7 +17,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Set up Node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3  # Atualização para a versão 3
       with:
         node-version: '14'
 
@@ -38,4 +38,5 @@ jobs:
         subject: Workflow failure alert
         to: victorannes2013@gmail.com
         from: victorannes2013@gmail.com
-        body: "One or more tests failed in the latest workflow run. Please review the details."
+        body: "Um ou mais testes falharam na última execução do workflow. Por favor, revise os detalhes."
+
